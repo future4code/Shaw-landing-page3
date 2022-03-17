@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* aqui inicia o style da barra de navegação - header  */
+nav{
+    background: #ff914d;
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1vh 5vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar .logo >a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600
+}
+.navbar .logo >a>span{
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+    font-size: 1.1em;
+}
+.navbar .menu > li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu >li> a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.4s ease;
+}
+.navbar .menu >li> a:hover{
+    color: #111
+}
+
+
+/* aqui começa o style do inicio  */
+
+.inicio{
+    display: flex;
+    /* flex-direction: row; */
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    background-image: url(https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80);
+}
+main .inicio-conteudo{
+    width: 40%;
+    /* border: 2px solid black; */
+}
+.inicio .inicio-conteudo .texto-1{
+    font-size: 2rem;
+    color: #ffbd59;
+}
+.inicio .inicio-conteudo .texto-2{
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-left: -3px;
+    color: #ffbd59;
+}
+.inicio .inicio-conteudo .texto-3{
+    font-size: 40px;
+    margin: 5px 0;
+    color: #ffbd59;
+}
+.inicio .inicio-conteudo .texto-3 >span{
+    color: #ff914d;
+    font-weight: 500;
+    font-size: 4rem;
+}
+.imagem-logo img{
+    width: 30vw;
+    height: auto;
+    border-radius: 80%;
+}
+
+
+
+
+
+/* aqui começa o style do footer  */
+
+footer{
+    display: flex;
+    height: 8vh;
+    /* flex-grow: 1; */
+    /* background: #ff914d; */
+    background: #ff914d;
+}
+
