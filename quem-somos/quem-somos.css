@@ -4,7 +4,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Inicio do header */
+/* Inicio do header ------- */
 
 .cabecalho {
     /* background: #ff914d; */
@@ -94,24 +94,22 @@ button{
     color: #161616;
 }
 
-/* inicio do bobby */
+/* inicio do bobby ------ Conteúdo principal */
 
+.conteudo-principal{
+    font-size: 1.5rem;
+    }
 
-.Titulo{
+.Titulo-Principal{
    color: #ff914d;
    text-align:left; 
    padding-top: 2rem;
    padding-left: 4rem;
   
-   /* padding: 4rem 4rem; */
-}
-
-.conteudo-principal{
-font-size: 1.5rem;
 }
 
 .p1{
-    font-size: 1.1em;
+    font-size: 1.2em;
     display: flex;
     flex-grow: 1;
     justify-content:left;
@@ -122,10 +120,10 @@ font-size: 1.5rem;
 .img-p1 img{
     display: flex;
     justify-content:center;
-    width: 30vw;
+    width: 25vw;
     height: auto;
+    padding-left: 52rem;
 }
-
 
 .p2{
     font-size: 1.5em;
@@ -136,26 +134,32 @@ font-size: 1.5rem;
     background-image: url(https://media.gazetadopovo.com.br/sites/2/2021/02/19141903/rir-saude-960x540.jpg);
 }
 
-.corp2{
+.cor-palavra-p2{
     color: #ff914d; 
 }
 
-.taxa-zero{
-    display: flex;
+#titulo-p3{
+    color: #ff914d;
+    text-align:start; 
+    padding-top: 6rem;
+    padding-left: 30rem;
+    font-size: 1.5em;
 }
 
 .p3{
     font-size: 1.3em;
     color: black;
     display: flex;
-    padding: 12rem 5rem;
+    padding-top: 2rem;
+    padding-left: 30rem;
+    /* padding: 10rem 5rem; */
     /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG4g9VPKqv1clge3vF9IkRxTUqvMayEESZafJhW2a6RJoCX1I6Z5VcXmRaWka9ssfXEkg&usqp=CAU); */
 }
 
 .img-p3 img{
     display: flex;
     justify-content:flex-end;
-    width: 30vw;
+    width: 25vw;
     height: auto;
 }
 
@@ -169,24 +173,39 @@ font-size: 1.5rem;
     background-size: 100%;
 }
 
+#titulo-p5{
+    color: #ff914d;
+    text-align:start; 
+    padding-top: 6rem;
+    padding-left: 5rem;
+    font-size: 1.5em;
+}
+
 .p5{
     font-size: 1.3em;
     color: black;
     display: flex;
-    padding: 12rem 5rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    padding-left: 5rem;
+
 }
+
 .img-p5{
     width: 15vw;
     height: 15vh;
     border-radius: 60% 0 60% 0 ;
+    padding-left: 60rem;
 }
+
+/* Inicio rodapé -------------- */
 
 .footer{
     display: flex;
     justify-content: center;
     margin: 0 auto;
     background: #fff;
-    border-top: 1px solid #ff914d;
+    border-top: 2px solid #ff914d;
     padding: 2rem;
     color: #161616;
     font-family: 'Ubuntu', sans-serif;
@@ -195,21 +214,21 @@ font-size: 1.5rem;
 }
 
 .footer .img-redes-insta{
-    display: flex;
     height: 20%;
     width: 20%;
-    justify-content: space-evenly
 }
 
 .footer .img-redes-twitter{
-    display: flex;
     height: 20%;
     width: 20%;
-    justify-content: space-evenly
 }
 .footer .img-redes-facebook{
-    display: flex;
     height: 20%;
-    width: 20%;
-    justify-content: space-evenly
+    width: 20%;   
+}
+
+.frase{
+    display: flex;
+    color: #ff914d;
+    padding-right: 10rem;
 }
