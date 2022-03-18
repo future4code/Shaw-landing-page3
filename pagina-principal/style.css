@@ -8,19 +8,28 @@
 }
 
 
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* aqui inicia o style da barra de navegação - header  */
 .cabecalho {
     /* background: #ff914d; */
+    position: relative;
     background: #fff;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 0.7rem 0;
+    padding: 12px 0;
     font-family: 'Ubuntu', sans-serif;
 }
 .cabecalho-logo {
-    font-size: 1rem;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 .cabecalho-logo > a {
     color: #ff914d;
@@ -42,13 +51,12 @@ button{
     color: #161616;
     font-size: 1rem;
     font-weight: 500;
-    margin: 0 15px;
-    transition: 0.1s ease;
+    padding: 2px 16px;
     border: #fff;
     border-radius: 6px;
     background: #fff;
     width: auto;
-    height: 2rem;
+    height: 32px;
     transition: all 0.3s;
 }
 .cabecalho-menu > button:hover{
@@ -59,12 +67,12 @@ button{
     height: 2rem;
 }
 
-.cabecalho-botao {
+.cabecalho-conta {
     display: flex;
     gap: 1rem;
 }
 
-.cabecalho-botao .cabecalho-botao-abra {
+.cabecalho-conta .cabecalho-conta-abra {
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -78,7 +86,7 @@ button{
     transition: all 0.3s;
 }
 
-.cabecalho-botao .cabecalho-botao-acesse {
+.cabecalho-conta .cabecalho-conta-acesse {
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -92,10 +100,11 @@ button{
     transition: all 0.3s;
 }
 
-.cabecalho-botao button:hover {
+.cabecalho-conta button:hover {
     background-color: rgb(233, 229, 229);
     color: #161616;
 }
+
 
 
 /* aqui começa o style do inicio  */
@@ -109,6 +118,12 @@ button{
     align-items: center;
     padding: 2rem 5rem;
     background-image: url(https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.texto-1 > span{
+    color: #fff;
+    font-size: 2.5rem;
 }
 .texto-1 > span{
     color: #fff;
@@ -163,3 +178,63 @@ main .inicio-conteudo{
 }
 
 
+
+/* aqui inicia a parte responsiva  */
+
+label {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+}
+
+@media (max-width: 960px){
+    header .cabecalho-menu{
+        display: none;
+    }
+
+    label {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    label:hover {
+        color: #ff914d;
+    }
+
+    label .fa-times {
+        display: none;
+    }
+    #check:checked ~ header .cabecalho-menu {
+        z-index: 2;
+        position: fixed;
+        background: rgba(243, 156, 18, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ header .cabecalho-menu-item {
+        margin-left: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+}
+
+
+
+
+
+@media (max-width: 500px){
+header .cabecalho-conta{
+    display: none;
+}
+}
