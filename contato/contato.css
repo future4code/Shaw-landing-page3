@@ -1,0 +1,34 @@
+.question {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px
+  }
+  
+  .question input,
+  .question .answer { display: none }
+  
+  .question label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%
+  }
+  
+  
+  .question input:checked ~ .answer {
+    display: block
+  }
+
+  h1,h3,h4 {
+     text-align: center;
+
+  
+
+  
+ }
+  form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
