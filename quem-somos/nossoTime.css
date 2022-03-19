@@ -96,127 +96,96 @@ button{
     background-color: rgb(233, 229, 229);
     color: #161616;
 }
+/* Inicio do conteudo principal ----- */
 
-/* inicio do Conteúdo principal ----- */
-
-.conteudo-principal{
-    font-size: 1.5rem;
-    }
-
-.Titulo-Principal{
-   color: #ff914d;
-   text-align:left; 
-   padding-top: 5rem;
-   padding-left: 4rem;
-  
-}
-
-.div1{
-    display: flex;
-}
-
-.p1{
-    font-size: 1.2em;
-    display: flex;
-    flex-grow: 1;
-    justify-content:left;
-    padding: 4rem;
-    padding-bottom: 13rem;
-   
-}
-
-.img-p1 img{
-    display: flex;
-    width: 38vw;
-    height: auto;
-    padding-right: 7rem;
-    padding-top: -20rem;
-}
-
-.p2{
-    font-size: 1.5em;
-    color: #fff;
-    display: flex;
-    padding: 16rem 5rem;
-    background-size: 100%;
-    background-image: url(https://media.gazetadopovo.com.br/sites/2/2021/02/19141903/rir-saude-960x540.jpg);
-}
-
-.cor-palavra-p2{
+.Titulo-Pagina{
     color: #ff914d;
-}
-
-.div3{
-    display: flex;
-}
-
-#titulo-p3{
-    color: #ff914d;
-    text-align:start; 
-    padding-top: 8rem;
-    padding-left: 10rem;
-    font-size: 1.5em;
-}
-
-.p3{
-    font-size: 1.3em;
-    color: black;
-    display: flex;
-    padding-top: 3rem;
-    padding-left: 10rem;
-}
-
-.img-p3 img{
-    display: flex;
-    justify-content:flex-end;
-    width: 33vw;
-    height: auto;
-    padding-left: 5rem;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-}
-
-.p4{
-    display: flex;
-    font-size: 1.3em;
-    color: #fff;
-    padding: 16rem 5rem;
-    /* background-image: url(https://tecfy.com.br/wp-content/uploads/2019/04/original-73f0486e78e57f2797f0892651d30463.jpg); */
-    background-image: url(https://media.gettyimages.com/photos/black-woman-downtown-using-mobile-phone-and-holding-laptop-picture-id1203971920);
-    background-size: 100%;
-}
-.div5{
-    display: flex;
-}
-#titulo-p5{
-    color: #ff914d;
-    text-align:start; 
-    padding-top: 6rem;
-    padding-left: 4rem;
-    font-size: 1.5em;
-}
-
-.p5{
-    font-size: 1.3em;
-    color: black;
-    display: flex;
-    padding-top: 3rem;
-    padding-bottom: 13.5rem;
-    padding-left: 4rem;
-
-}
-
-.img-p5{
-    width: 34vw;
-    height: 40vh;
-    border-radius: 60% 0 60% 0 ;
-    display: flex;
-    padding-left: 10rem;
+    text-align:center; 
     padding-top: 5rem;
     padding-bottom: 3rem;
-    
-
+    font-size: 1.3em;
 }
+
+.Avatar-1{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ff914d;
+    padding-right: 15rem;
+    padding-left: 5rem;
+}
+
+.cor-Silvia{
+    color: #ff914d;
+}
+
+.Texto-Avatar1{
+    font-size: 1.5em;
+    display: flex;
+    flex-grow: 1;
+    padding-top: 4rem;
+    padding-left: 20rem;
+    padding-right: 5rem; 
+}
+
+.img-Avatar1{
+    display: flex;
+    width: 20vw;
+    height: 20vh;
+}
+
+.Avatar-2{
+    display: flex;
+    justify-content: center;
+    padding-right: 15rem;
+    padding-left: 5rem;
+}
+
+.cor-Sérvulo{
+    color: #ff914d;
+}
+
+.Texto-Avatar2{
+    font-size: 1.5em;
+    display: flex;
+    flex-grow: 1;
+    padding-top: 4rem;
+    padding-left: 20rem;
+    padding-right: 5rem; 
+}
+
+.img-Avatar2{
+    display: flex;
+    width: 20vw;
+    height: 20vh;
+}
+
+.Avatar-3{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ff914d;
+    padding-right: 15rem;
+    padding-left: 5rem;
+    
+}
+
+.cor-Sabrina{
+    color:#ff914d
+}
+.Texto-Avatar3{
+    font-size: 1.5em;
+    display: flex;
+    flex-grow: 1;
+    padding-top: 4rem;
+    padding-left: 20rem;
+    padding-right: 5rem; 
+}
+
+.img-Avatar3{
+    display: flex;
+    width: 20vw;
+    height: 20vh;
+}
+
 
 /* Inicio rodapé -------------- */
 
@@ -225,7 +194,7 @@ button{
     justify-content: center;
     margin: 0 auto;
     background: #fff;
-    border-top: 2px solid #ff914d;
+    border-top: 1px solid #ff914d;
     padding: 2rem;
     color: #161616;
     font-family: 'Ubuntu', sans-serif;
