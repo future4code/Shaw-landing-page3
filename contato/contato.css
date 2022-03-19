@@ -110,6 +110,7 @@ button{
   .question label {
     display: inline-block;
     font-weight: bold;
+    color: #ff914d;
     margin-bottom: 5px;
     width: 100%
   }
@@ -119,7 +120,7 @@ button{
     display: block
   }
 
-  h2,h3,h4 {
+  h2,h3,h4,h5 {
      text-align: center;
  }
 
@@ -134,9 +135,7 @@ button{
     border-radius: 1em;
 }
 
-table{
-background-color: darkgrey;
-}
+
 
 button{
   background-color:chocolate;
@@ -177,8 +176,8 @@ button{
   justify-content: space-evenly
 } 
 
-p{
+/* p{
   text-align: center;
   color:black;
   font-weight: bold;
-}
+} */
