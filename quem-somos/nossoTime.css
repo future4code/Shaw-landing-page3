@@ -8,19 +8,28 @@
 }
 
 
-/* aqui inicia o style da barra de navegação - header  */
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inicio style da barra de navegação - header  */
 .cabecalho {
     /* background: #ff914d; */
+    position: relative;
     background: #fff;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 0.7rem 0;
+    padding: 12px 0;
     font-family: 'Ubuntu', sans-serif;
 }
 .cabecalho-logo {
-    font-size: 1rem;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 .cabecalho-logo > a {
     color: #ff914d;
@@ -42,13 +51,12 @@ button{
     color: #161616;
     font-size: 1rem;
     font-weight: 500;
-    margin: 0 15px;
-    transition: 0.1s ease;
+    padding: 2px 16px;
     border: #fff;
     border-radius: 6px;
     background: #fff;
     width: auto;
-    height: 2rem;
+    height: 32px;
     transition: all 0.3s;
 }
 .cabecalho-menu > button:hover{
@@ -59,12 +67,12 @@ button{
     height: 2rem;
 }
 
-.cabecalho-botao {
+.cabecalho-conta {
     display: flex;
     gap: 1rem;
 }
 
-.cabecalho-botao .cabecalho-botao-abra {
+.cabecalho-conta .cabecalho-conta-abra {
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -78,7 +86,7 @@ button{
     transition: all 0.3s;
 }
 
-.cabecalho-botao .cabecalho-botao-acesse {
+.cabecalho-conta .cabecalho-conta-acesse {
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -92,17 +100,18 @@ button{
     transition: all 0.3s;
 }
 
-.cabecalho-botao button:hover {
+.cabecalho-conta button:hover {
     background-color: rgb(233, 229, 229);
     color: #161616;
 }
+
 /* Inicio do conteudo principal ----- */
 
 .Titulo-Pagina{
     color: #ff914d;
     text-align:center; 
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 4.5rem;
+    padding-bottom: 6rem;
     font-size: 1.3em;
 }
 
@@ -138,6 +147,9 @@ button{
     justify-content: center;
     padding-right: 15rem;
     padding-left: 5rem;
+    border: 1px solid #ff914d;
+    border-top: none;
+    border-bottom: none;
 }
 
 .cor-Sérvulo{
@@ -163,6 +175,7 @@ button{
     display: flex;
     justify-content: center;
     border: 1px solid #ff914d;
+    border-bottom: none;
     padding-right: 15rem;
     padding-left: 5rem;
     
@@ -187,7 +200,7 @@ button{
 }
 
 
-/* Inicio rodapé -------------- */
+/* Inicio Footer -------------- */
 
 .footer{
     display: flex;
