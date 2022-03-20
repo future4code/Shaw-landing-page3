@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  border: 0px;
+  margin: 0px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Ubuntu', sans-serif; */
+}
+ 
+/* aqui inicia o style da barra de navegação - header  */
+.cabecalho {
+  /* position: relative; */
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.cabecalho-logo {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.cabecalho-logo > a {
+  color: #ff914d;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cabecalho-logo > a > span {
+  font-family: 'Poppins', sans-serif;
+  color: #161616;
+  font-size: 1.1em;
+}
+
+button{
+  cursor: pointer;
+}
+
+.cabecalho-menu > a button{
+  color: #161616;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2px 16px;
+  border: #fff;
+  border-radius: 6px;
+  background: #fff;
+  width: auto;
+  height: 32px;
+  transition: all 0.3s;
+}
+.cabecalho-menu > a button:hover{
+  border: #fff;
+  border-radius: 6px;
+  background: rgb(233, 229, 229);
+  width: auto;
+  height: 2rem;
+}
+
+.cabecalho-conta {
+  display: flex;
+  gap: 1rem;
+}
+
+.cabecalho-conta .cabecalho-conta-abra {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 15px;
+  background-color: #ff914d;
+  border: none;
+  width: 9rem;
+  height: 2.8rem;
+  border: 1px solid #ff914d;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.cabecalho-conta .cabecalho-conta-acesse {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 15px;
+  background-color: #ff914d;
+  border: none;
+  width: 6rem;
+  height: 2.8rem;
+  border: 1px solid #ff914d;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.cabecalho-conta a button:hover {
+  background-color: rgb(233, 229, 229);
+  color: #161616;
+}
+
+ 
+ 
+ 
+ /* Formato para o FAQ */
+.question {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px
+  }
+  
+  .question input,
+  .question .answer { display: none }
+  
+  .question label {
+    display: inline-block;
+    font-weight: bold;
+    color:#ff914d;
+    margin-bottom: 5px;
+    width: 100%
+  }
+  
+  
+  .question input:checked ~ .answer {
+    display: block
+  }
+
+  h2,h3,h4,h5 {
+     text-align: center;
+     padding: 10px;
+ }
+
+
+ /* Formato para o Formulário de Contato */
+  form {
+    background-color: #CCC;
+    margin: 0 auto;
+    width: 400px;
+    padding:2em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    
+}
+
+table td{
+  padding:10px;
+}
+
+button{
+  background-color:#ff914d;
+  color: white; 
+}
+
+p{
+  padding: 20px;
+  line-height: 20px;
+  margin-bottom: 10 ;
+  margin-top:10;
+
+
+}
+
+
+ /* Formato para o Footer */
+
+.footer{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background: #fff;
+  border-top: 1px solid #ff914d;
+  padding: 2rem;
+  color: #161616;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  
+
+}
+
+.footer .img-redes-insta{
+  display: flex;
+  height: 20%;
+  width: 20%;
+  justify-content: space-evenly
+}
+
+.footer .img-redes-twitter{
+  display: flex;
+  height: 20%;
+  width: 20%;
+  justify-content: space-evenly
+}
+.footer .img-redes-facebook{
+  display: flex;
+  height: 20%;
+  width: 20%;
+  justify-content: space-evenly
+} 
+
+ #copyr{
+  text-align: center;
+  color:black;
+  font-weight: bold;
+  align-items: center;
+} 
+
+/* aqui inicia a parte responsiva  */
+
+label {
+  display: none;
+}
+
+#check {
+  z-index: 3;
+  display: none;
+}
+
+@media (max-width: 960px){
+  header .cabecalho-menu{
+      display: none;
+  }
+
+  label {
+      display: block;
+      font-size: 32px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  label .menu-btn:hover {
+      color: #ff914d;
+  }
+
+  label .close-btn:hover {
+      color: #fff;
+  }
+
+  label .close-btn {
+      display: none;
+  }
+  #check:checked ~ header .cabecalho-menu {
+      z-index: 2;
+      position: fixed;
+      background: rgba(243, 156, 18, 0.9);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #check:checked ~ header .cabecalho-menu-item {
+      margin-left: 0;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+      font-weight: 700;
+  }
+  #check:checked ~ header .cabecalho-menu-item:hover {
+      background: #161616;
+      color: #fff;
+  }
+  #check:checked ~ header label .menu-btn {
+      display: none;
+  }
+
+  #check:checked ~ header label .close-btn {
+      z-index: 2;
+      display: block;
+      position: fixed;
+  }
+
+  label .menu-btn {
+      position: absolute;
+  }
+
+  label {
+      padding-bottom: 28px;
+  }
+
+  .cabecalho {
+      margin-top: -10px;
+      margin-bottom: -8px;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 610px){
+  header .cabecalho-conta{
+      display: none;
+  }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+}
